@@ -1,0 +1,31 @@
+ef5_geocoding.form:
+  path: '/ef5-geocoding-form'
+  defaults:
+    _form: '\Drupal\ef5_geocoding\Form\GeocodingForm'
+    _title: 'Geocoding Form'
+  requirements:
+    _permission: 'access content'
+
+ef5_geocoding.results:
+  path: '/ef5-geocoding-results/{lat}/{lng}'
+  defaults:
+    _controller: '\Drupal\ef5_geocoding\Controller\GeocodingController::showResults'
+    _title: 'Geocoding Results'
+  requirements:
+    _permission: 'access content'
+
+ef5_geocoding.error:
+  path: '/ef5-geocoding-error'
+  defaults:
+    _controller: '\Drupal\ef5_geocoding\Controller\GeocodingErrorController::showError'
+    _title: 'Geocoding Error'
+  requirements:
+    _permission: 'access content'
+
+ef5_geocoding.settings:
+  path: '/admin/config/system/ef5_geocoding'
+  defaults:
+    _form: '\Drupal\ef5_geocoding\Form\GeocodingSettingsForm'
+    _title: 'Configurações da API de Geocodificação'
+  requirements:
+    _permission: 'administer site configuration'

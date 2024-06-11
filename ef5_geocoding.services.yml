@@ -1,0 +1,4 @@
+services:
+  ef5_geocoding.geoservicesapi:
+    class: Drupal\ef5_geocoding\GeoServicesAPI\GeoService
+    arguments: ['@config.factory']

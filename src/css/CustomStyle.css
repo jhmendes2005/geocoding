@@ -1,0 +1,36 @@
+.custom-form {
+    background-color: #ffffff;
+    padding: 20px;
+}
+  
+.custom-form .form-item {
+    margin-bottom: 15px;
+
+}
+
+.custom-form .form-item label {
+    font-weight: bold;
+}
+
+.custom-form .form-item input {
+    border: 1px solid #8100cc;
+    padding: 8px;
+    width: 100%;
+}
+
+.custom-form .form-actions {
+    text-align: right;
+}
+
+.custom-form .form-actions input {
+    background-color: #8100cc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.custom-form .form-actions input:hover {
+    background-color: #a200ff;
+}

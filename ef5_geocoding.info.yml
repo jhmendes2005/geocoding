@@ -1,0 +1,8 @@
+name: 'EF5 Geocoding Service'
+type: module
+description: 'Informação de geolocalização.'
+core_version_requirement: ^10
+package: Custom
+version: 1.0.1
+libraries:
+  - ef5_geocoding/custom-styles

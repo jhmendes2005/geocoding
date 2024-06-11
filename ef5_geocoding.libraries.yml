@@ -1,0 +1,4 @@
+custom-styles:
+  css:
+    theme:
+      src/css/CustomStyle.css: {}

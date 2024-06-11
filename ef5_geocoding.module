@@ -1,0 +1,27 @@
+<?php
+
+use Drupal\Core\Routing\RouteBuilderInterface;
+use Symfony\Component\Routing\Route;
+
+function ef5_geocoding_menu() {
+  $items = [];
+
+  $items['ef5-geocoding-form'] = [
+    'title' => 'Geocoding Form',
+    'page callback' => 'Drupal\ef5_geocoding\Form\GeocodingForm::buildForm',
+    'access callback' => TRUE,
+  ];
+
+  return $items;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function ef5_geocoding_theme($existing, $type, $theme, $path) {
+  return [
+    'ef5_geocoding_results' => [
+      'variables' => ['lat' => 0, 'lng' => 0],
+    ],
+  ];
+}
